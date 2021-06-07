@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="520.0" style="-fx-background-color: #2c2e30;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.Register">
+    <children>
+        <TextField fx:id="usernameBox" layoutX="35.0" layoutY="250.0" prefHeight="45.0" prefWidth="450.0" promptText="Enter your username" style="-fx-background-color: #30302c; -fx-border-color: #9fe2bf; -fx-background-insets: 0; -fx-border-radius: 20; -fx-background-radius: 20; -fx-text-fill: f8f8f8; -fx-border-width: 4;" />
+        <PasswordField fx:id="passwordBox" layoutX="35.0" layoutY="360.0" prefHeight="45.0" prefWidth="450.0" promptText="Enter your password" style="-fx-background-color: #30302c; -fx-border-color: #9fe2bf; -fx-background-insets: 0; -fx-border-radius: 20; -fx-background-radius: 20; -fx-border-width: 4; -fx-text-fill: f8f8f8;">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets></PasswordField>
+        <Label layoutX="38.0" layoutY="220.0" prefHeight="21.0" prefWidth="71.0" style="-fx-text-fill: #f8f8f8; -fx-font-family: Avenir-Black; -fx-font-size: 15;" stylesheets="@../fonts/Avenir-Black.css" text="Username" />
+        <Label layoutX="265.0" layoutY="54.0" prefHeight="12.0" prefWidth="27.0" scaleX="10.0" scaleY="10.0" style="-fx-text-fill: #9fe2bf;" stylesheets="@../fonts/dotty.css" text="asteria" />
+        <Line endX="349.0" fill="#9fe2bf" layoutX="135.0" layoutY="150.0" startX="-100.0" stroke="#9fe2bf" />
+        <Label layoutX="38.0" layoutY="330.0" prefHeight="21.0" prefWidth="81.0" style="-fx-text-fill: #f8f8f8; -fx-font-family: Avenir-Black; -fx-font-size: 15;" stylesheets="@../fonts/Avenir-Black.css" text="Password" />
+        <Label layoutX="210.0" layoutY="164.0" prefHeight="40.0" prefWidth="106.0" style="-fx-text-fill: #f8f8f8; -fx-font-family: Avenir-Black; -fx-font-size: 28;" stylesheets="@../fonts/Avenir-Black.css" text="Register" />
+        <Label alignment="CENTER" layoutX="492.0" layoutY="5.0" onMouseClicked="#clickExit" prefHeight="10.0" prefWidth="13.0" scaleX="2.0" scaleY="2.0" style="-fx-text-fill: #9fe2bf;" text="x" />
+        <Label alignment="CENTER" layoutX="465.0" layoutY="7.0" onMouseClicked="#minimizeWindow" prefHeight="10.0" prefWidth="13.0" scaleX="2.0" scaleY="2.0" style="-fx-text-fill: #9fe2bf;" text="-" />
+        <Label fx:id="loginMessageLabel" alignment="CENTER" layoutX="34.0" layoutY="530.0" prefHeight="21.0" prefWidth="450.0" style="-fx-text-fill: #9fe2bf; -fx-font-family: Avenir-Black; -fx-font-size: 15;" stylesheets="@../fonts/Avenir-Black.css" />
+      <Label layoutX="38.0" layoutY="440.0" prefHeight="21.0" prefWidth="81.0" style="-fx-text-fill: #f8f8f8; -fx-font-family: Avenir-Black; -fx-font-size: 15;" stylesheets="@../fonts/Avenir-Black.css" text="First Name" />
+      <Label layoutX="263.0" layoutY="440.0" prefHeight="21.0" prefWidth="81.0" style="-fx-text-fill: #f8f8f8; -fx-font-family: Avenir-Black; -fx-font-size: 15;" stylesheets="@../fonts/Avenir-Black.css" text="Last Name" />
+      <TextField fx:id="firstNameBox" layoutX="34.0" layoutY="470.0" prefHeight="45.0" prefWidth="210.0" promptText="Enter your first name" style="-fx-background-color: #30302c; -fx-border-color: #9fe2bf; -fx-background-insets: 0; -fx-border-radius: 20; -fx-background-radius: 20; -fx-text-fill: f8f8f8; -fx-border-width: 4;" />
+      <TextField fx:id="lastnameBox" layoutX="263.0" layoutY="470.0" prefHeight="45.0" prefWidth="210.0" promptText="Enter your last name" style="-fx-background-color: #30302c; -fx-border-color: #9fe2bf; -fx-background-insets: 0; -fx-border-radius: 20; -fx-background-radius: 20; -fx-text-fill: f8f8f8; -fx-border-width: 4;" />
+        <Button layoutX="141.0" layoutY="563.0" mnemonicParsing="false" onMouseClicked="#registerButton" prefHeight="50.0" prefWidth="241.0" style="-fx-font-family: Trade Gothic LT Std; -fx-background-color: #9fe2bf; -fx-border-color: #9fe2bf; -fx-border-width: 4; -fx-background-radius: 20; -fx-border-radius: 20; -fx-font-size: 20; -fx-text-fill: #30302c; -fx-font-weight: BOLD;" text="REGISTER" />
+      <Label layoutX="211.0" layoutY="667.0" onMouseClicked="#backToLogin" prefHeight="21.0" prefWidth="96.0" style="-fx-text-fill: #f8f8f8; -fx-font-family: Avenir-Black; -fx-font-size: 15;" stylesheets="@../fonts/Avenir-Black.css" text="Back to Login" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'dotty';
+    src: url('dotty.ttf');
+}
+
+.text {
+    -fx-font-family: "dotty";
+}

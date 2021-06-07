@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" styleClass="background" stylesheets="@../images/background.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.ExploreController">
+    <children>
+        <Rectangle fill="#2c2e30" height="800.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: .8;" width="1280.0" />
+        <Rectangle fill="#2c2e30" height="800.0" stroke="TRANSPARENT" strokeType="INSIDE" width="310.0" />
+        <Button layoutX="78.0" layoutY="680.0" mnemonicParsing="false" onMouseClicked="#uploadButton" prefHeight="50.0" prefWidth="154.0" style="-fx-font-family: Trade Gothic LT Std Bold; -fx-background-color: #9fe2bf; -fx-border-color: #9fe2bf; -fx-border-width: 4; -fx-background-radius: 15; -fx-border-radius: 15; -fx-text-fill: #30302c; -fx-font-weight: BOLD;" text="UPLOAD ART" />
+        <ImageView fitHeight="36.0" fitWidth="41.0" layoutX="29.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/logo-green.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="128.0" layoutY="45.0" prefHeight="12.0" prefWidth="27.0" scaleX="5.0" scaleY="5.0" style="-fx-text-fill: #9fe2bf;" stylesheets="@../fonts/dotty.css" text="asteria" />
+        <Label alignment="CENTER" layoutX="1250.0" layoutY="9.0" onMouseClicked="#clickExit" prefHeight="10.0" prefWidth="13.0" scaleX="2.0" scaleY="2.0" style="-fx-text-fill: #9fe2bf;" text="x" />
+        <Label alignment="CENTER" layoutX="1220.0" layoutY="11.0" onMouseClicked="#minimizeWindow" prefHeight="10.0" prefWidth="13.0" scaleX="2.0" scaleY="2.0" style="-fx-text-fill: #9fe2bf;" text="-" />
+        <Label layoutX="25.0" layoutY="127.0" style="-fx-text-fill: #f8f8f8; -fx-font-family: Trade Gothic LT Std Bold; -fx-font-weight: BOLD;" text="MENU" />
+        <Label layoutX="25.0" layoutY="285.0" style="-fx-text-fill: #f8f8f8; -fx-font-family: Trade Gothic LT Std Bold; -fx-font-weight: BOLD;" text="LIBRARY" />
+        <Label layoutX="25.0" layoutY="395.0" style="-fx-text-fill: #f8f8f8; -fx-font-family: Trade Gothic LT Std Bold; -fx-font-weight: BOLD;" text="WALLET" />
+        <TextField layoutX="375.0" layoutY="30.0" prefHeight="30.0" prefWidth="230.0" promptText="Search..." style="-fx-font-family: Trade Gothic LT Std Bold; -fx-background-color: #ffffff00; -fx-border-color: #ffffff00; -fx-font-fill: #f8f8f8; -fx-text-fill: #f8f8f8; -fx-opacity: .75;" />
+        <ImageView fitHeight="20.0" fitWidth="19.0" layoutX="348.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: .5;">
+            <image>
+                <Image url="@../images/search.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="75.0" layoutY="175.0" onMouseClicked="#homeClick" style="-fx-text-fill: #f8f8f8; -fx-font-family: Trade Gothic LT Std Bold; -fx-opacity: .8;" text="Home" />
+        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="25.0" layoutY="170.0" onMouseClicked="#homeClick" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: .8;">
+            <image>
+                <Image url="@../images/house.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="75.0" layoutY="225.0" style="-fx-text-fill: #f8f8f8; -fx-font-family: Trade Gothic LT Std Bold; -fx-font-weight: BOLD;" text="Explore" />
+        <Label layoutX="107.0" layoutY="748.0" style="-fx-text-fill: #f8f8f8; -fx-font-family: Trade Gothic LT Std Bold; -fx-opacity: .5;" text="Asteria App v1.0" />
+        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="28.0" layoutY="225.0">
+            <image>
+                <Image url="@../images/explore.png" />
+            </image>    
+        </ImageView>
+        <Label layoutX="75.0" layoutY="335.0" onMouseClicked="#galleryClick" style="-fx-text-fill: #f8f8f8; -fx-font-family: Trade Gothic LT Std Bold; -fx-opacity: .8;" text="Gallery" />
+        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="28.0" layoutY="333.0" onMouseClicked="#galleryClick" style="-fx-opacity: .8;">
+            <image>
+                <Image url="@../images/library.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="28.0" layoutY="442.0" onMouseClicked="#walletClick" style="-fx-opacity: .8;">
+            <image>
+                <Image url="@../images/coin_icon.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="75.0" layoutY="445.0" onMouseClicked="#walletClick" style="-fx-text-fill: #f8f8f8; -fx-font-family: Trade Gothic LT Std Bold; -fx-opacity: .8;" text="Asteria Wallet" />
+        <ScrollPane layoutX="334.0" layoutY="191.0" prefHeight="592.0" prefWidth="920.0" style="-fx-background-color: #ffffff00; -fx-background: #ffffff00;" stylesheets="@../css/scrollpane.css">
+            <content>
+                <AnchorPane fx:id="anchorPane" minHeight="0.0" minWidth="0.0" prefHeight="1342.0" prefWidth="900.0" style="-fx-background-color: #ffffff00;">
+               <children>
+                  <GridPane fx:id="gridPane" prefHeight="300.0" prefWidth="900.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                  </GridPane>
+               </children></AnchorPane>
+            </content>
+        </ScrollPane>
+        <Label fx:id="availableLabel" layoutX="334.0" layoutY="165.0" style="-fx-text-fill: #f8f8f8; -fx-font-family: Trade Gothic LT Std Bold; -fx-opacity: .8;" text="XXX Pieces Available for Bidding or Purchase" />
+        <Label layoutX="334.0" layoutY="137.0" style="-fx-text-fill: #f8f8f8; -fx-font-family: Trade Gothic LT Std Bold; -fx-font-weight: BOLD;" text="EXPLORE" />
+      <ImageView fx:id="refreshAnimation" fitHeight="14.0" fitWidth="15.0" layoutX="346.0" layoutY="81.0" onMouseClicked="#refresh" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: .8;">
+         <image>
+            <Image url="@../images/refresh.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

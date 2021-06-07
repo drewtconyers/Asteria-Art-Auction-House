@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Avenir-Black';
+    src: url('Avenir-Black.ttf');
+}
+
+.text {
+    -fx-font-family: "Avenir-Black";
+    -fx-text-fill: #f8f8f8;
+}
+
+.text-input {
+    -fx-font-family: "Avenir-Black";
+    -fx-text-fill: #f8f8f8;
+}
