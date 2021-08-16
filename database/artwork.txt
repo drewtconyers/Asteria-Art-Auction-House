@@ -1,0 +1,24 @@
+create table asteria.artwork
+(
+    piece_number           int identity
+        constraint artwork_pk
+            primary key nonclustered,
+    artwork_title          nvarchar(145)              not null,
+    owner                  nvarchar(145)              not null,
+    current_highest_bidder nvarchar(145),
+    encoded_image          nvarchar(max)              not null,
+    details                nvarchar(1000),
+    purchase_price         float,
+    bid_price              float                      not null,
+    bidders                int,
+    hour                   int                        not null,
+    minute                 int                        not null,
+    time_created           datetime default getdate() not null,
+    bid_history            nvarchar(500),
+    end_time               nvarchar(100),
+    start_time             nvarchar(100),
+    onAuction              nvarchar(20),
+    bids_amount            int
+)
+go
+

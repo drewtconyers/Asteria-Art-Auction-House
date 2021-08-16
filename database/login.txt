@@ -1,0 +1,20 @@
+create table asteria.login
+(
+    account_id   int identity
+        constraint login_pk
+            primary key nonclustered,
+    firstname    nvarchar(145) not null,
+    lastname     nvarchar(145) not null,
+    username     nvarchar(145) not null,
+    hashPassword int           not null,
+    user_funds   float
+)
+go
+
+create unique index login_account_id_uindex
+    on asteria.login (account_id)
+go
+
+create unique index login_username_uindex
+    on asteria.login (username)
+go
