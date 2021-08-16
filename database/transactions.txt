@@ -1,0 +1,6 @@
+create table asteria.transactions
+(
+    server_history nvarchar(max),
+    recently_sold  nvarchar(500)
+)
+go
